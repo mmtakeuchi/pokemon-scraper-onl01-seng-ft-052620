@@ -22,8 +22,7 @@ class Pokemon
         id = row[0]
         name = row[1]
         type = row[2]
-        db = row[3]
-        self.new(id: id, name: name, type: type, db: db)
+        self.new(id: id, name: name, type: type, db: @db)
     end
 
     def self.find(id, db)
